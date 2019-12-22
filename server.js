@@ -12,7 +12,8 @@ const PORT = 5000;
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
 
-
+//Routes
+require('./routes/testRoute')(app);
 
   
 app.listen(PORT, () => {
