@@ -6,8 +6,11 @@ const bodyParser = require('body-parser');
 require('./config/client');
 
 const app = express();
-
 const PORT = 5000;
+
+//Setup app environment for body-parser
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json());
 
 
 
